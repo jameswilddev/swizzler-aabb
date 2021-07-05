@@ -1,0 +1,46 @@
+{
+  "name": "swizzler-aabb",
+  "version": "999.999.999",
+  "engines": {
+    "node": ">=12.13.0"
+  },
+  "engineStrict": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jameswilddev/swizzler-aabb"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jasmine": "3.6.9",
+    "@types/node": "13.13.20",
+    "@typescript-eslint/eslint-plugin": "4.1.1",
+    "@typescript-eslint/parser": "4.1.1",
+    "del-cli": "3.0.1",
+    "eslint": "7.25.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-prettier": "3.4.0",
+    "jasmine": "3.6.1",
+    "npm-run-all": "4.1.5",
+    "nyc": "15.1.0",
+    "prettier": "2.2.1",
+    "swizzler": "0.0.4",
+    "typescript": "4.2.4"
+  },
+  "peerDependencies": {
+    "swizzler": "0.0.4"
+  },
+  "scripts": {
+    "buildClean": "del-cli \"**/*.js\" \"**/*.d.ts\" \"!**/node_modules/**/*\"",
+    "buildTypeScript": "tsc",
+    "buildJasmineUnit": "jasmine --config=unit.jasmine.json",
+    "buildNyc": "nyc --check-coverage --all --exclude \"**/*.ts\" --exclude \"**/*.d.ts\" --exclude \"**/unit.*\" --lines 100 --functions 100 --branches 100 --statements 100 npm run-script buildJasmineUnit",
+    "test": "npm-run-all buildClean buildTypeScript buildNyc",
+    "lint": "eslint \"**/*.ts\""
+  },
+  "files": [
+    "**/*.js",
+    "**/*.d.ts",
+    "!**/unit.js",
+    "!**/unit.d.ts"
+  ]
+}
