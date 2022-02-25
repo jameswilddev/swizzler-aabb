@@ -13,7 +13,7 @@ jobs:
         os: [ubuntu-18.04, windows-2019, macos-10.15]
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
+    - uses: actions/setup-node@v3
       with:
         node-version: '12.x'
         registry-url: 'https://registry.npmjs.org'
@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
+    - uses: actions/setup-node@v3
       with:
         node-version: '12.x'
         registry-url: 'https://registry.npmjs.org'
