@@ -13,8 +13,8 @@
   "devDependencies": {
     "@types/jasmine": "4.0.3",
     "@types/node": "16.11.36",
-    "@typescript-eslint/eslint-plugin": "5.24.0",
-    "@typescript-eslint/parser": "5.24.0",
+    "@typescript-eslint/eslint-plugin": "5.25.0",
+    "@typescript-eslint/parser": "5.25.0",
     "del-cli": "4.0.1",
     "eslint": "8.15.0",
     "eslint-config-prettier": "6.15.0",
