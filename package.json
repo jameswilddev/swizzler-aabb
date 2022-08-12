@@ -12,7 +12,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/jasmine": "4.0.3",
-    "@types/node": "16.11.47",
+    "@types/node": "16.11.48",
     "@typescript-eslint/eslint-plugin": "5.33.0",
     "@typescript-eslint/parser": "5.33.0",
     "del-cli": "5.0.0",
