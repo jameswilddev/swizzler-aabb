@@ -24,7 +24,7 @@
     "nyc": "15.1.0",
     "prettier": "2.8.3",
     "swizzler": "0.0.5",
-    "typescript": "4.9.4"
+    "typescript": "4.9.5"
   },
   "peerDependencies": {
     "swizzler": "0.0.5"
